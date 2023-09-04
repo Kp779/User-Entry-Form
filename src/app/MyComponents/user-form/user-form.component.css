@@ -1,0 +1,29 @@
+.click{
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    border-radius: 0.1rem;
+    font-size: 0.9rem;
+    color: #8e9393;
+}
+#input1{
+    border: none;
+}
+
+.cancel{
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 0.1rem;
+}
+.save{
+    background-color: #1c9c95;
+    border:#1c9c95 ;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 0.1rem;
+}
+
+.bold{
+    font-weight: 500;
+    font-size: 0.8rem;
+}

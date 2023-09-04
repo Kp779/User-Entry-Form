@@ -1,0 +1,8 @@
+.addUser{
+    background-color: #1c9c95;
+    border:#1c9c95 ;
+    color: #fff;
+}
+.addUser:active{
+    background-color: #1c9c95;
+}

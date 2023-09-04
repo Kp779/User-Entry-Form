@@ -1,0 +1,84 @@
+<div class="container shadow d-flex justify-content-evenly px-0 pb-3 flex-column mainFormModel ">
+    <div class="row px-3 pt-3">
+        <h5>{{isedit?'Edit User Details':'Add User'}}</h5>
+    </div> 
+    <form class="row g-4 mx-0 flex-fill" [formGroup]="userForm" (ngSubmit)="isedit ? editUserDetails(userForm) : saveUserDetails(userForm)">
+        <div class="col-md-4">
+            <label for="First Name*" class="mb-1 bold form-label ps-2" aria-required="true">First Name*</label>
+            <input type="text " id="input1" class="form-control click"   formControlName="firstName" >
+        </div>
+        <div class="col-md-4">
+            <label for="Middle Name" class="mb-1  bold form-label ps-2">Middle Name</label>
+            <input type="text" class="form-control click"   formControlName="middleName">
+        </div>
+        <div class="col-md-4">
+            <label for="Last Name*" class="mb-1  bold form-label ps-2" aria-required="true">Last Name*</label>
+            <input type="text" class="form-control click"   formControlName="lastName">
+        </div>
+        <div class="col-md-3">
+            <label for="User Id" class="mb-1  bold form-label ps-2">User Id</label>
+            <input type="text" class="form-control click"   formControlName="id">
+        </div>
+        <div class="col-md-3">
+            <label for="Role" class="mb-1 bold form-label ps-2">Role</label>
+            <select id="inputRole" class="click form-select"   formControlName="userRole">
+              <option selected>Select user role</option>
+              <option>a</option>
+              <option>b</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="User Type*" class="mb-1 bold form-label ps-2" aria-required="true">User Type*</label>
+            <select id="inputUserType" class="click form-select"   formControlName="userType">
+                <option selected>Select user type</option>
+                <option>a</option>
+                <option>b</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="Email" class="mb-1 bold form-label ps-2" aria-required="true">Email*</label>
+            <input type="email" class="form-control click"   formControlName="email">
+        </div>
+        <div class="col-md-6">
+            <label for="Address Line 1*" class="mb-1 bold form-label ps-2" aria-required="true">Address Line 1*</label>
+            <input type="text" class="form-control click"   formControlName="address_l1">
+        </div>
+        <div class="col-md-6">
+            <label for="Address Line 2" class="mb-1 bold form-label ps-2">Address Line 2</label>
+            <input type="text" class="form-control click"   formControlName="address_l2">
+        </div>
+        <div class="col-md-4">
+            <label for="City*" class="mb-1 bold form-label ps-2" aria-required="true">City*</label>
+            <input type="text" class="form-control click"   formControlName="city">
+        </div>
+        <div class="col-md-4">
+            <label for="State" class="mb-1 bold form-label ps-2">State</label>
+            <select id="inputState" class="click form-select"   formControlName="state">
+                <option selected>Select state</option>
+                <option>a</option>
+                <option>b</option>
+              </select>
+        </div>
+        <div class="col-md-4">
+            <label for="Zip Code" class="mb-1 bold form-label ps-2">Zip Code</label>
+            <input type="text" class="form-control click"   formControlName="zipCode">
+        </div>
+        <div class="col-md-4">
+            <label for="Mobile Number*" class="mb-1 bold form-label ps-2" aria-required="true">Mobile Number*</label>
+            <input type="text" class="form-control click"   formControlName="mobileNumber">
+        </div>
+        <div class="col-md-4">
+            <label for="Office Phone" class=" mb-1 bold form-label ps-2">Office Phone</label>
+            <input type="text" class="form-control click"   formControlName="officePhone">
+        </div>
+        <div class="col-md-4">
+            <label for="Upload Picture" class="mb-1 bold form-label ps-2 ">Upload Picture</label>
+            <input class="form-control"  type="file"   formControlName="pictureFile">
+            
+        </div>
+        <div class="col-md-1 d-flex ">
+            <button class="btn btn-lg cancel btn-light px-4 me-3" (click)="backToHome()">Cancel</button>
+            <button class="btn btn-lg save px-4 me-3" type="submit" >{{isedit? 'UPDATE': 'SAVE'}}</button> 
+        </div>
+    </form>
+</div>

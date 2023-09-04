@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "firstName": "john doe",
+      "middleName": null,
+      "lastName": null,
+      "id": "45",
+      "userRole": "b",
+      "userType": "a",
+      "email": "doe@gmail.com",
+      "address_l1": "704 SECTOR B",
+      "address_l2": "SILICON CITY",
+      "city": "INDORE",
+      "state": null,
+      "zipCode": "452012",
+      "mobileNumber": "7869606391",
+      "officePhone": "+91-9087606711",
+      "pictureFile": null
+    },
+    {
+      "firstName": "Test Case 1",
+      "middleName": null,
+      "lastName": null,
+      "id": "12A3",
+      "userRole": "a",
+      "userType": "b",
+      "email": "testcase1@test.com",
+      "address_l1": "704 SECTOR B",
+      "address_l2": "SILICON CITY",
+      "city": "INDORE",
+      "state": null,
+      "zipCode": "452012",
+      "mobileNumber": "7869606391",
+      "officePhone": "+91-7869606391",
+      "pictureFile": null
+    }
+  ]
+}
